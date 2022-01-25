@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Virtual Pet</title>
+</head>
+
+<body style="height:500px; width:auto; border:1px solid Black;">
+
+    <div style="text-align:center">
+        <h1>This is my pet dog named Lucky!</h1>
+        <p>Feed and play with Luck to keep him healthy and happy!</p>
+
+        <img src="C:\Users\asuresh\OneDrive - Eastside Preparatory School\Documents\Programming 1(Javascript)\Virtual Pet\Images\Happy dog.jfif" alt=" Happy dog">
+
+        <p id="pet-condition">Lucky is Happy</p>
+    </div>
+
+    <div style="position:absolute; top:350px; left: 200px;">
+        <h3>Lucky's full belly!</h3>
+        <meter id="belly-meter" min="0" max="10" value="5"></meter>
+        <p id="belly-paragraph">10</p>
+        <button id="belly-button" onclick="feedPet();">Feed me!</button>
+    </div>
+
+    <div style="position:absolute; top:350px; left: 500px;">
+        <h3>Lucky's happiness!</h3>
+        <meter id="play-meter" min="0" max="10" value="5"></meter>
+        <p id="play-paragraph">10</p>
+        <button id="play-button" onclick="happyPet();">Play with me!</button>
+    </div>
+
+    <div style=" position:absolute; top:350px; left: 800px; ">
+        <h3>Make Lucky Clean</h3>
+        <meter id="clean-meter" min="0 " max="10 " value="5 "></meter>
+        <p id="clean-paragraph ">10</p>
+        <button id="clean-button" onclick="cleanPet();">Clean me!</button>
+    </div>
+
+
+    <script src=" js/virtualpet.js "></script>
+
+</body>
+
+</html>
